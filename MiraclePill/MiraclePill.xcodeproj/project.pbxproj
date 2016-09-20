@@ -12,6 +12,8 @@
 		E11B20AD1D89DAFC003230BC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E11B20AB1D89DAFC003230BC /* Main.storyboard */; };
 		E11B20AF1D89DAFC003230BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E11B20AE1D89DAFC003230BC /* Assets.xcassets */; };
 		E11B20B21D89DAFC003230BC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E11B20B01D89DAFC003230BC /* LaunchScreen.storyboard */; };
+		E1E9C5D31D90CA920055E4AA /* SuccessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E9C5D11D90CA920055E4AA /* SuccessViewController.swift */; };
+		E1E9C5D41D90CA920055E4AA /* SuccessViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1E9C5D21D90CA920055E4AA /* SuccessViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		E11B20AE1D89DAFC003230BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E11B20B11D89DAFC003230BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E11B20B31D89DAFC003230BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E1E9C5D11D90CA920055E4AA /* SuccessViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SuccessViewController.swift; sourceTree = "<group>"; };
+		E1E9C5D21D90CA920055E4AA /* SuccessViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SuccessViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,8 @@
 				E11B20AE1D89DAFC003230BC /* Assets.xcassets */,
 				E11B20B01D89DAFC003230BC /* LaunchScreen.storyboard */,
 				E11B20B31D89DAFC003230BC /* Info.plist */,
+				E1E9C5D11D90CA920055E4AA /* SuccessViewController.swift */,
+				E1E9C5D21D90CA920055E4AA /* SuccessViewController.xib */,
 			);
 			path = MiraclePill;
 			sourceTree = "<group>";
@@ -126,6 +132,7 @@
 			files = (
 				E11B20B21D89DAFC003230BC /* LaunchScreen.storyboard in Resources */,
 				E11B20AF1D89DAFC003230BC /* Assets.xcassets in Resources */,
+				E1E9C5D41D90CA920055E4AA /* SuccessViewController.xib in Resources */,
 				E11B20AD1D89DAFC003230BC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -138,6 +145,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E11B20AA1D89DAFC003230BC /* ViewController.swift in Sources */,
+				E1E9C5D31D90CA920055E4AA /* SuccessViewController.swift in Sources */,
 				E11B20A81D89DAFC003230BC /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -302,6 +310,7 @@
 				E11B20B81D89DAFC003230BC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

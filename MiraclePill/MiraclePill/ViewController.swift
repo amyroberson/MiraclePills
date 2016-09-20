@@ -13,6 +13,13 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
     @IBOutlet weak var statePicker: UIPickerView!
     @IBOutlet weak var statePickerBtn: UIButton!
     
+    @IBOutlet weak var countryLabel: UILabel!
+    @IBOutlet weak var countryEntry: UITextField!
+    @IBOutlet weak var zipCodeLabel: UILabel!
+    @IBOutlet weak var zipCodeEntry: UITextField!
+    
+    
+    
     let states = ["Alaska", "Alabama", "Arkansas", "Other State"]
     
     override func viewDidLoad() {
@@ -29,7 +36,18 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
 
     @IBAction func stateBtnPressed(_ sender: AnyObject) {
         statePicker.isHidden = false
+        zipCodeEntry.isHidden = true
+        zipCodeLabel.isHidden = true
+        countryEntry.isHidden = true
+        countryLabel.isHidden = true
         
+        
+    }
+    
+    @IBAction func buyNowBtnPressed(_ sender: AnyObject) {
+        let viewController = SuccessViewController(nibName: "SuccessViewController", bundle: Bundle.main)
+        self.present(viewController, animated: true)
+            
     }
     
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
@@ -47,6 +65,10 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         statePickerBtn.setTitle(states[row], for: UIControlState.normal)
         statePicker.isHidden = true
+        zipCodeLabel.isHidden = false
+        zipCodeEntry.isHidden = false
+        countryLabel.isHidden = false
+        countryEntry.isHidden = false
     }
 }
 
